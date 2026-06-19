@@ -3,7 +3,8 @@
 **routing--->when request is send,corresponding response is called routing
 **Reactjs applications are facebook,whatsapp,instagram
 **ReactJS provides a component-based approach and a virtual DOM for efficient rendering, making it a popular choice for developing complex and interactive web applications.
-
+**Virtual DOM 
+   Virtual DOM is an in-memory representation of the real DOM that React uses to compare changes and efficiently update       only the necessary parts of the actual DOM.
 **In js,we need to wait for page ie.localhost/home like that but in react we no need to wait ie.localhost:3000 thats it
 
 ** React js has the facility of virtual dom(changes are done automatically)
