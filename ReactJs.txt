@@ -1,0 +1,62 @@
+**ReactJs is a js library for building user interfaces
+**react is client side js library  (we are running in servers) 
+**routing--->when request is send,corresponding response is called routing
+**Reactjs applications are facebook,whatsapp,instagram
+**ReactJS provides a component-based approach and a virtual DOM for efficient rendering, making it a popular choice for developing complex and interactive web applications.
+
+**In js,we need to wait for page ie.localhost/home like that but in react we no need to wait ie.localhost:3000 thats it
+
+** React js has the facility of virtual dom(changes are done automatically)
+
+**2 components:
+   functional and class component
+
+** In class component when we want to assign a value then we use state
+
+** in functional component,when we want to state there is a feature called hooks that we have to import {useState}
+
+**state management and react lifecycle are the best features of class component
+
+****state management and react lifecycle are both used ie.is called hooks in functional components
+
+**state is used when we want to declare multiple variables in a comonent
+
+**props is when we want to send a value from one component to another component
+
+**In class level,when we want to use a value from parent to child then we use this.props
+
+
+**When we want to apply css to react,apply css in App.css and import App.css in App.js file
+
+** we can apply css in 2 ways  ---->inline and outline
+**In inline we use 2 curly braces ie,{{}}
+
+** In react js,backgroundColor,textAlign will be there instead of background-color and text-align in js and the value should be given in  " "
+
+
+          INTERVIEW QUESTIONS
+1.how react is different from other frameeworks
+Ans: 1.virtual Dom-->it utilizes virtual dom,an in-memory representation of actual dom,when state of the component is changedreact creates a new virtual dom representation and compares it with previous
+   2.view-oriented:concerened with view layer of application.manages rendering components efficiently
+   3.uni-directional data flow:1 direction->from parent to child
+   4.component based--->efficiently used
+
+**client side rendering(CSR) vs server side rendering(SSR)---->CSR shows an empty page before loading, while SSR displays a fully-rendered HTML page on the first load. This gives server-side rendering a speed advantage over client-side rendering, as the browser doesn't need to process large JavaScript files. 
+  so we use CSR for Apps and SSR for data heavy websites
+
+
+**use of refs in react??
+  ---Refs provide a way to access DOM nodes or React elements created in the render method
+
+**React fiber???--->easy and smoothing accesing and rendering
+   Fiber focuses on animations and responsiveness. It has the ability to split work into chunks and prioritize tasks. We can pause work and come back to it later. We can also reuse previously completed work or maybe abort it if it is not needed.
+
+
+**what are synthetic events in react??
+  diff browsers have diff management in diff ways and we have jquery it works with same API on every browser so we do not have to write different code in differet browsers.ensures that the event works across multiple platforms
+ React has created a wrapper same as the native browser in order to avoid creating multiple implementations for multiple methods for multiple browsers,
+
+**why hooks introduced??
+   Hooks allow function components to have access to state and other React features. Because of this, class components are generally no longer needed.for code reusability
+
+
