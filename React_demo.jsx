@@ -108,5 +108,58 @@ function SampleState(){
 export default SampleState;
 
 
+
+                                                      ***FORM HANDLING***
+*In nrml HTML code, when we click on submit button,the page refreshes after submitting, inorder to avoid this we use state and we store data in state and manage functionalities like validations,processing etc
+*React provides a way to manage form data through component state, leading to what are known as "controlled components."
+* we  Create a function to handle the change event:
+  const [name, setName] = useState("");
+
+  function handleChange(e) {
+  setName(e.target.value);
+  }
+
+  <input
+  type="text" value={name} onChange={handleChange}/>
+
+  Example:
+  import React,{useState} from "react";
+
+function Form(){
+    const [name,setName]=useState("");
+    const [email,setEmail]=useState("");
+    const [password,setPassword]=useState("");
+    const [contact,setContact]=useState("");
+
+    //This function prevents data from refreshing after submit button
+    function NotRefresh(e){
+        e.preventDefault();
+        console.log(name,email,password,contact);
+    }
+
+    function handleChange(e) {
+        setName(e.target.value);
+    }
+
+    return(
+        <form onSubmit={NotRefresh}>
+        <div>Name</div>
+        <input type="text" value={name} onChange={handleChange}/>
+        <div>Email</div>
+        <input type="email" value={email} onChange={(e)=>setEmail(e.target.value)}/>
+        <div>Password</div>
+        <input type="password" value={password} onChange={(e)=>setPassword(e.target.value)}/>
+        <div>Contact</div>
+        <input type="number" value={contact} onChange={(e)=>setContact(e.target.value)}/><br/>
+        <button type="submit">Submit</button>
+        </form>
+
+    )
+}
+export default Form;
+
+  
+
+
   
 
