@@ -81,6 +81,21 @@ function Fun(props){
 #App.js
 <Fun name="ganga" age={24}/> //If it is string we have to give it in "" and other expressions like int,bool we have give {} in App.jsx file
 
+
+                                            ***STATE***
+*State is like a variable that lives inside component and controls how UI behaves
+*React component automatically rerenders when state changes
+*use state when your data can change over time
+* EXample: Instagram post button,likes increases
+
+
+  HOOKS
+*Hooks are special functions that allows you to use state and other features in functional components
+*Most common used hooks are :
+  useState()
+  useEffect()
+  useRef()
+
   
                                                           ***useState***
 *useState() is a special function that allows you to create and manage data inside the component
